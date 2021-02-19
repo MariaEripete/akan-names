@@ -3,6 +3,7 @@
     <head>
         <title>Akan Names Calculator</title>
         <link src="css/stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
         <h1>Akan Names Calculator</h1>
@@ -10,12 +11,20 @@
         <p>You may be asking youself what is the meaning of Akan names, don't worry I gatchu! ;) Here's a brief description of what they are:</p>
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. Do you want to know what your Akan name would be if you were Ghanaian? I do too! Please fill in the form below to get your answer.</p>
         <form>
-            <label>First Name</label>
-            <input type="text" id="firstName">
-            <label>Second Name</label>
-            <input type="text" id="secondName">
-            <label>Male</label>
-            <input type="radio" id="male">
+            <div> 
+                <label>First Name:</label><br>
+                <input type="text" id="firstName" placeholder="Enter your first name here" size="50"><br>
+                <label>Second Name:</label><br>
+                <input type="text" id="secondName" placeholder="Enter second name here" size="50"><br>
+                <!--<label>Male</label>-->
+                <label>Choose your gender</label>
+                <input type="radio" id="male"> Male
+                <!--<label>Female</label>-->
+                <input type="radio" id="female"> Female<br>
+                <button type="button" id="submit">Submit</button>
+            </div>
+            
         </form>
+        
     </body>
 </html>
