@@ -11,20 +11,34 @@
         <p>You may be asking youself what is the meaning of Akan names, don't worry I gatchu! ;) Here's a brief description of what they are:</p>
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. Do you want to know what your Akan name would be if you were Ghanaian? I do too! Please fill in the form below to get your answer.</p>
         <form>
-            <div> 
+            <div class="form"> 
                 <label>First Name:</label><br>
                 <input type="text" id="firstName" placeholder="Enter your first name here" size="50"><br>
-                <label>Second Name:</label><br>
-                <input type="text" id="secondName" placeholder="Enter second name here" size="50"><br>
+                
                 <!--<label>Male</label>-->
+                <label>Year of Birth:</label><br>
+                <input type="number" id="yearBorn" placeholder="Enter your year of birth here" size="50"><br>
+                <label>Month of Birth:</label><br>
+                <input type="month" id="secondName" placeholder="" size="50"><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="number" id="dateBorn" placeholder="Enter your date of bith here" size="50"><br>
                 <label>Choose your gender</label>
                 <input type="radio" id="male"> Male
                 <!--<label>Female</label>-->
                 <input type="radio" id="female"> Female<br>
                 <button type="button" id="submit">Submit</button>
             </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your full name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              </div>
             
         </form>
-        
+
     </body>
 </html>
