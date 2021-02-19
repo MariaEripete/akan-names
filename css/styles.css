@@ -1,6 +1,6 @@
+
 .form{
-    text-align: center;
-}
-.mb-3{
-    border: 20px;
+    max-width: 720px;
+    margin: auto;
+    padding: 20px;
 }

@@ -6,39 +6,51 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
+      <div class="container">
         <h1>Akan Names Calculator</h1>
         <h3>What are Akan names?</h3>
         <p>You may be asking youself what is the meaning of Akan names, don't worry I gatchu! ;) Here's a brief description of what they are:</p>
-        <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. Do you want to know what your Akan name would be if you were Ghanaian? I do too! Please fill in the form below to get your answer.</p>
+        <p><strong>Akan names</strong> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. Do you want to know what your <strong>Akan name</strong> would be if you were Ghanaian? I do too! Please fill in the form below to get your answer.</p>
         <form>
-            <div class="form"> 
-                <label>First Name:</label><br>
-                <input type="text" id="firstName" placeholder="Enter your first name here" size="50"><br>
+            <div class=""> 
+                <label>Your Name:</label><br>
+                <input type="text" id="yourName" placeholder="Enter your name here" size="50"><br>
                 
                 <!--<label>Male</label>-->
                 <label>Year of Birth:</label><br>
-                <input type="number" id="yearBorn" placeholder="Enter your year of birth here" size="50"><br>
+                <input type="number" id="yearBorn"  size="50"><br>
                 <label>Month of Birth:</label><br>
-                <input type="month" id="secondName" placeholder="" size="50"><br>
+                <input type="number" id="month" placeholder="" size="50"><br>
 
                 <label>Date of Birth:</label><br>
-                <input type="number" id="dateBorn" placeholder="Enter your date of bith here" size="50"><br>
+                <input type="number" id="dayBorn"  size="50"><br>
                 <label>Choose your gender</label>
                 <input type="radio" id="male"> Male
                 <!--<label>Female</label>-->
                 <input type="radio" id="female"> Female<br>
                 <button type="button" id="submit">Submit</button>
             </div>
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your full name">
-              </div>
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-              </div>
+           
             
-        </form>
+            
+        </form>   
+      
+       <!-- <form class="form1">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" size="50">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>-->
 
     </body>
 </html>
