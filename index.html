@@ -7,7 +7,7 @@
     </head>
     <body>
       
-      <div class="container-fluid">
+      <div class="container">
         <h1>Akan Names Calculator</h1>
         <h3>What are Akan names?</h3>
         <p>You may be asking youself what is the meaning of Akan names, don't worry I gatchu! ;) Here's a brief description of what they are:</p>
@@ -15,28 +15,38 @@
         <form>
             <div class="jumbotron"> 
                 <label>Your Name:</label><br>
-                <input type="text" id="yourName" placeholder="Enter your name here" size="50"><br>
+                <input type="text" id="yourName" placeholder="Enter your name here" size="50" class="form-control"><br>
                 
                 
                 <label>Year of Birth:</label><br>
-                <input type="number" id="yearBorn"  size="50"><br>
+                <input type="number" id="yearBorn"  class="form-control"><br>
                 <label>Month of Birth:</label><br>
-                <input type="number" id="month" placeholder="" size="50"><br>
+                <input type="number" id="month" placeholder="" class="form-control"><br>
 
-                <label>Date of Birth:</label><br>
-                <input type="number" id="dayBorn"  size="50"><br>
-                <label>Choose your gender</label>
-                <input type="checkbox" id="male"> Male
-                <!--<label>Female</label>-->
-                <input type="checkbox" id="female"> Female<br>
-                <button type="button" class="btn btn-info active" id="submit" onclick="getName();yearOfBirth();monthOfBirth();dayOfBirth();gender()">Submit</button>
+                <br>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radAnswer" class="form-control" id="male" value="a" checked>
+                  <label class="form-check-label" >
+                  Male
+                  </label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radAnswer" class="form-control" id="female" value="b">
+                  <label class="form-check-label" >
+                  Female
+                  </label>
+               </div><br>
+
+
+                <button type="button" class="btn btn-info active" class="form-control" id="submit" onclick="getName();yearOfBirth();monthOfBirth();dayOfBirth();gender()">Submit</button>
             </div>
             
         </form> 
       </div>  
         <p class="container">Compare the results you get to the table below;</p> 
         
-        <div>
+        <div class="container">
           <table class="table table-striped table-bordered">
             <thead class="thead-dark">
               <tr>
@@ -93,6 +103,7 @@
           </table>
         </div>
         <p class="container">I hope this was an interesting experience for you!! Tell a friend to tell a friend so they can all know their <strong>Akan names!</strong></p>
+        
        
         <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
