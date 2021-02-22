@@ -6,21 +6,22 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
+      <div class="container-bg">
       
       <div class="container">
         <h1>Akan Names Calculator</h1>
         <h3>What are Akan names?</h3>
         <p>You may be asking youself what is the meaning of Akan names, don't worry I gatchu! ;) Here's a brief description of what they are:</p>
         <p><strong>Akan names</strong> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names. Do you want to know what your <strong>Akan name</strong> would be if you were Ghanaian? I do too! Please fill in the form below to get your answer.Make sure to press submit!</p>
-        <form method="POST"  name="myForm ">
+        <form name="myForm ">
             <div class="jumbotron"> 
                 
                 <label>Year of Birth:</label><br>
                 <input type="number" id="yearBorn" name="year" class="form-control" required><br>
                 <label>Month of Birth:</label><br>
-                <input type="number" id="monthBorn" name="month" placeholder="" class="form-control"><br>
+                <input type="number" id="monthBorn" name="month" placeholder="" class="form-control" required><br>
                 <label>Date of Birth:</label><br>
-                <input type="number" id="dayBorn" name="day" placeholder="" class="form-control"><br>
+                <input type="number" id="dayBorn" name="day" placeholder="" class="form-control"required><br>
 
                 <br>
 
@@ -38,8 +39,10 @@
                </div><br>
 
 
-                <button type="button" class="btn btn-info active" class="form-control" id="submit" onclick="getName();yearOfBirth();monthOfBirth();dayOfBirth();gender()">Submit</button>
-            </div>
+                <button type="button" class="btn btn-info active" class="form-control" id="submit" onclick="akan()">Submit</button>
+            </div><br>
+            <p id="output"> </p>
+
             
         </form> 
       </div>  
@@ -102,7 +105,7 @@
           </table>
         </div>
         <p class="container">I hope this was an interesting experience for you!! Tell a friend to tell a friend so they can all know their <strong>Akan names!</strong></p>
-        
+      </div>
         
        
         <script src="js/scripts.js"></script>

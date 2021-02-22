@@ -25,9 +25,7 @@ let akan=()=>{
         var gender = 'female';
     }
 
-    var answer = "Your akan name is "+ (answer)
-
-
+    
 
     if (gender ==="male" && daysOfWeek ==="Sunday"){
         return answer((male[results]));
@@ -84,9 +82,16 @@ let akan=()=>{
         if (gender ==="female" && daysOfWeek ==="Saturday"){
         return answer(female[results]);
     }
+
+
+    //var answer = document.getElementById("output");
+    //answer. innerHTML= "Your Akan name is " + answer;
+
     
 }
-
+ var output = ()=>{
+     answer. innerHTML= "YourAkan name is "+ 
+ }
 
 
 
