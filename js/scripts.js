@@ -24,61 +24,67 @@ let akan=()=>{
     else{
         var gender = 'female';
     }
+
+    var answer = "Your akan name is "+ (answer)
+
+
+
     if (gender ==="male" && daysOfWeek ==="Sunday"){
-        return (male[results]);
+        return answer((male[results]));
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Monday"){
-        return (male[results]);
+        return answer((male[results]));
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Tuesday"){
-        return (male[results]);
+        return answer((male[results]));
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Wednesday"){
-        return (male[results]);
+        return answer((male[results]));
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Thursday"){
-        return (male[results]);
+        return answer((male[results]));
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Friday"){
-        return (male[results]);
+        return answer(male[results]);
     }
     else{
         if (gender ==="male" && daysOfWeek ==="Saturday"){
-        return (male[results]);
+        return answer(male[results]);
     }
 
     if (gender ==="female" && daysOfWeek ==="Sunday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Monday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Tuesday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Wednesday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Thursday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Friday"){
-        return (female[results]);
+        return answer(female[results]);
     }
     else{
         if (gender ==="female" && daysOfWeek ==="Saturday"){
-        return (female[results]);
+        return answer(female[results]);
     }
+    
 }
 
 
@@ -124,59 +130,4 @@ var results = parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(MM+1)/10)) + DD
 var mNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
 var fNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 
-
-
-
-
-
-
-
-
-
-function validateForm(){
-	var name = document.forms["myForm"]["name"].value;
-	var year= document.forms["myForm"]["year"].value;
-	var birthMonth = document.forms["myForm"]["month"].value;
-	var date = document.forms["myForm"]["day"].value;
-
-	if (name.length<1) {
-        document.getElementById('error-name').innerHTML = " Please Enter Your Name *"
-    }
-    if (email.length<1) {
-        document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
-    }
-    if (phone.length<1) {
-        document.getElementById('error-phone').innerHTML = " Please Enter Your Phone *";      
-    }
-    if (message.length<1) {
-        document.getElementById('error-message').innerHTML = " Please Enter Your Message *";
-    }          
-    if(name.length<1 || email.length<1 || phone.length<1 || message.length<1){
-       	return false;
-    }            
-}
-
-
-function validateForm(){
-	var name = document.forms["myForm"]["your-name"].value;
-	var email = document.forms["myForm"]["your-email"].value;
-	var phone = document.forms["myForm"]["your-phone"].value;
-	var message = document.forms["myForm"]["your-message"].value;
-
-	if (name.length<1) {
-        document.getElementById('error-name').innerHTML = " Please Enter Your Name *"
-    }
-    if (email.length<1) {
-        document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
-    }
-    if (phone.length<1) {
-        document.getElementById('error-phone').innerHTML = " Please Enter Your Phone *";      
-    }
-    if (message.length<1) {
-        document.getElementById('error-message').innerHTML = " Please Enter Your Message *";
-    }          
-    if(name.length<1 || email.length<1 || phone.length<1 || message.length<1){
-       	return false;
-    }            
-}
 
