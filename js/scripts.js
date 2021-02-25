@@ -1,9 +1,9 @@
 
 function myFunction() {
     document.getElementById("myForm").submit();
-}
+        }
 
-let dayValue=()=>{
+let dayValue=()=>{      
     var year =document.getElementById("yearBorn").value;
     var yy= parseInt(year.toString().slice(2,4));
     var cc= parseInt(year.toString().slice(0,2));
@@ -16,7 +16,8 @@ let dayValue=()=>{
     }
     if (mm<=0 || mm>12){
         alert ("Invalid month");
-}
+    }
+
 
     var results= parseInt(( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7);
     let daysOfWeek= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -57,8 +58,7 @@ let dayValue=()=>{
         //}
 
     }
-    else{
-        if(document.getElementById("gender"))female.checked;{
+         if (document.getElementById("gender"))female.checked;{
             if (results === 0){
             alert ("You were born on "+daysOfWeek[0]+", Your Akan name is"+ female[0]);
         }else if(results === 1){
@@ -75,8 +75,7 @@ let dayValue=()=>{
                 alert ("You were born on "+ daysOfWeek[4] +", Your Akan name is "+ female[4]) 
 
         }
-        else{
-            if(results === 5){
+        else if(results === 5){
                 alert ("You were born on "+ daysOfWeek[5] +", Your Akan name is "+ female[5]) 
 
         }
@@ -84,9 +83,10 @@ let dayValue=()=>{
                 alert ("You were born on "+ daysOfWeek[6] +", Your Akan name is "+ female[6]) 
 
         }
-        }   
-      }
-    }
+}
+}   
+      
+    
     //function getName(){
         //alert (dayValue())
     //};
